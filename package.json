@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "start:dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -20,11 +21,16 @@
   },
   "homepage": "https://github.com/es2013/foodchella#readme",
   "devDependencies": {
+    "file-loader": "^6.2.0",
+    "serve": "webpack serve --config config/webpack.dev.js --progress --profile --content-base src/",
     "webpack": "^5.33.2",
-    "webpack-cli": "^4.6.0"
+    "webpack-bundle-analyzer": "^4.4.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
+    "image-webpack-loader": "^7.0.1",
     "jquery": "^3.6.0",
     "path": "^0.12.7",
     "popper.js": "^1.16.1"
