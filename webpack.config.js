@@ -55,7 +55,7 @@ const config  = {
         start_url: "../index.html",
         background_color: "#01579b",
         theme_color: "#ffffff",
-        fingerprints: false,//Fingerprints tell webpack whether or not it should generate unique fingerprints so that each time a new manifest is generated
+        fingerprints: false, //Fingerprints tell webpack whether or not it should generate unique fingerprints so that each time a new manifest is generated
         inject: false,
         icons: [{
           src: path.resolve("assets/img/icons/icon-512x512.png"),
